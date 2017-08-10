@@ -2,8 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
-    include ../components/example/example.pug
-    include ../components/test-svg/test-svg.pug
+    include ../components/page-header/page-header.pug
     include ../components/footer/footer.pug
 
     head
@@ -12,9 +11,7 @@ html(class="no-js", lang="ru")
         |%=symbols=%
 
         section.page__wrapper
-
-            //- Include your components here
-
+            +page-header()
             .page__buffer
 
         .page__footer
