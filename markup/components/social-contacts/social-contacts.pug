@@ -1,0 +1,7 @@
+mixin social-contacts(data)
+    ul.social-contacts
+        each val, index in data
+            li.social-contacts__item
+                a(class="socail-contacts__link" href= val.socialLink target=_blank)
+                    svg(class="socail--contacts__icon" width="25" height="15")
+                        use(xlink:href= val.socialIcon)

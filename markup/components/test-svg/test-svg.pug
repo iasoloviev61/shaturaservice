@@ -1,0 +1,7 @@
+mixin test-svg(data)
+    .test-svg
+        each val, index in data.names
+            div(class="items")
+                svg(class="icons__img" width="25" height="15")
+                    use(xlink:href= data.path[index])
+                div.items__name #{val}

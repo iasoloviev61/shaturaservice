@@ -1,0 +1,38 @@
+.test-svg {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.items {
+  position: relative;
+  display: block;
+  margin-right: 20px;
+  text-decoration: none;
+  border: 2px solid salmon;
+  margin-bottom: 10px;
+
+  //&:hover .items__name{
+  //  display: flex;
+  //  position: absolute;
+  //  color: black;
+  //  background-color: white;
+  //  width: 200px;
+  //  z-index: 10;
+  //  bottom: 0;
+  //  font-family: $rbold;
+  //  font-size: 20px;
+  //}
+}
+.items__name {
+  display: block;
+  text-decoration: none;
+  font-family: $rbold;
+  font-size: 16px;
+  color: gray;
+}
+
+.icons__img {
+  height: 50px;
+  width: 50px;
+  fill: black;
+}
