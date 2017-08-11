@@ -1,5 +1,7 @@
 include ../social-contacts/social-contacts.pug
 include ../signup/signup.pug
+include ../page-logo/page-logo.pug
+include ../add-service/add-service.pug
 mixin page-header(data)
     header.page-header
         .header-top
@@ -7,3 +9,6 @@ mixin page-header(data)
                 +social-contacts(socialContacts)
                 +signup(signup)
         .header-bottom
+            .header-container
+                +page-logo()
+                +add-service()

@@ -1,0 +1,24 @@
+.add-service {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.add-service__button {
+  outline: none;
+  /* cursor: default; */
+  border: none;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  -webkit-appearance: button; /* for input */
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  color: $light--main;
+  background-color: $dark--main;
+   background: $dark--main;
+  background-image: linear-gradient(to bottom, lighten( $dark--main, 20% ), $dark--main);
+  border-radius: 6px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+}
