@@ -2,6 +2,7 @@ doctype html
 html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
+    include ../components/test-svg/test-svg.pug
     include ../components/footer/footer.pug
 
     head
@@ -11,7 +12,8 @@ html(class="no-js", lang="ru")
 
         section.page__wrapper
 
-            //- Include your components here
+            .container
+                +test-svg(testSvg.communications)
 
             .page__buffer
 

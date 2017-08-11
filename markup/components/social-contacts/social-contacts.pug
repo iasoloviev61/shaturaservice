@@ -2,6 +2,7 @@ mixin social-contacts(data)
     ul.social-contacts
         each val, index in data
             li.social-contacts__item
-                a(class="socail-contacts__link" href= val.socialLink target=_blank)
-                    svg(class="socail--contacts__icon" width="25" height="15")
+                a(class='social-contacts__link social-contacts__link-' + val.socialName href= val.socialLink target=_blank)
+                    svg(class='social-contacts__icon social-contacts__icon-' + val.socialName width="25" height="15")
                         use(xlink:href= val.socialIcon)
+                    span.social-contacts__text= val.socialText

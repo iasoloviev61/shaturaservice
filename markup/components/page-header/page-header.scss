@@ -1,4 +1,16 @@
 .page-header {
-  display: flex;
-  background-color: $decore--main;
+
 }
+.header-top {
+  background-color: $dark--main;
+  box-shadow: 0px 26px 46px -17px rgba($gray--dark, 0.75);
+
+}
+.header-container {
+  display: flex;
+  width: 95%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+

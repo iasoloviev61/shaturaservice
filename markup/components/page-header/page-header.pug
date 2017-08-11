@@ -2,5 +2,8 @@ include ../social-contacts/social-contacts.pug
 include ../signup/signup.pug
 mixin page-header(data)
     header.page-header
-        +social-contacts()
-        +signup()
+        .header-top
+            .header-container
+                +social-contacts(socialContacts)
+                +signup()
+        .header-bottom
