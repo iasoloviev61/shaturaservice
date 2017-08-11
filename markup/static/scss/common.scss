@@ -75,3 +75,11 @@ html {
 .page__buffer {
     height: 50px;
 }
+
+.page-container {
+
+    width: 95%;
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}

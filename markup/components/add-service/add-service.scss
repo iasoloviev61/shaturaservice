@@ -15,10 +15,14 @@
   -moz-user-select: none;
   -ms-user-select: none;
   color: $light--main;
-  background-color: $dark--main;
-   background: $dark--main;
+  background: $dark--main;
   background-image: linear-gradient(to bottom, lighten( $dark--main, 20% ), $dark--main);
   border-radius: 6px;
   padding: 9px 20px 10px 20px;
   text-decoration: none;
+  &:hover {
+    color: $light--middle;
+    background-image: linear-gradient(to bottom, lighten( $dark--main, 30% ), lighten( $dark--main, 10% ));
+
+  }
 }

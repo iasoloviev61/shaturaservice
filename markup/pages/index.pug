@@ -3,6 +3,7 @@ html(class="no-js", lang="ru")
 
     include ../components/head/head.pug
     include ../components/page-header/page-header.pug
+    include ../components/page-search/page-search.pug
     include ../components/footer/footer.pug
 
     head
@@ -12,6 +13,7 @@ html(class="no-js", lang="ru")
 
         section.page__wrapper
             +page-header()
+            +page-search()
             .page__buffer
 
         .page__footer
