@@ -1,2 +1,10 @@
 mixin signup(data)
     .signup
+        //button.signup__button(class="signup__register" type="button") Зарегистрироваться
+        //button.signup__button(class="signup__login" type="button") Войти
+        //button.signup__button(class="signup__reset-password" type="button") Забыли пароль?
+        each val in data
+            a.signup__button(class='signup__' + val.name href="#")
+                svg(class='signup__icon signup__icon-' + val.iconName width="25" height="15")
+                    use(xlink:href= val.iconPath)
+                span.signup__text= val.name
