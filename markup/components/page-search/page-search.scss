@@ -1,18 +1,20 @@
 .page-search {
 
-  background: linear-gradient(45deg, $dark--main 0%, lighten($dark--main, 40%) 50%, lighten($dark--main, 30%) 50%,lighten($dark--main, 60%) 100%);
   height: 100%;
   margin-bottom: 30px;
+
 }
 
 .page-search__title {
   text-align: center;
   font-family: $rmedium;
   font-size: 16px;
-  color: $light--main;
+  color: $title--main;
   padding-top: 10px;
+  margin-bottom: 10px;
   & h1 {
     margin-bottom: 0;
+
   }
   @include laptop() {
     font-size: 24px;
@@ -20,14 +22,14 @@
   @include desktop() {
     font-size: 35px;
   }
-
-}
+  }
 
 .page-search__slogan {
+  display: none;
   text-align: center;
   font-family: $rbold;
   font-size: 12px;
-  color: $light--main;
+  color: $text--main;
   //padding-top: 10px;
   @include laptop() {
     font-size: 18px;

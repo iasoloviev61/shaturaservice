@@ -1,13 +1,14 @@
 mixin service-cart(data)
     .page-service
-        .page-container(class='service-cart-container')
-            each val in data
-                .service-cart
-                    a.service-cart__title(class='service-cart__link' href= val.serviceLink)
-                        svg(class='service-cart__icon service-cart__icon-' + val.serviceIconName width="25" height="15")
-                            use(xlink:href= val.serviceICon)
-                        span.service-cart__text= val.serviceTitle
-                    ul.service-cart-list
-                        each item in val.servicesList
-                            li.service-cart__item
-                                a.service-cart__link(href="#")= item
+        .page-container
+            ul.service-cart-container
+                each val in data
+                    li.service-cart
+                        a.service-cart__title(class='service-cart__link' href= val.serviceLink)
+                            svg(class='service-cart__icon service-cart__icon-' + val.serviceIconName width="25" height="15")
+                                use(xlink:href= val.serviceICon)
+                            span.service-cart__text= val.serviceTitle
+                        ul.service-cart-list
+                            each item in val.servicesList
+                                li.service-cart__item
+                                    a.service-cart__link(href="#")= item
